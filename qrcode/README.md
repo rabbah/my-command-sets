@@ -2,7 +2,7 @@
 
 ## Commands
 
-- [`qr` ...](./packages/qr/qr/qr.js)
+- [`qr ...`](./packages/qr/qr/qr.js)
 
 ## Installation
 
