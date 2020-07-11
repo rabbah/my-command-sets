@@ -23,4 +23,4 @@ Here is an an example.
 
 This will produce the QR code in response.
 
-<img width="140" src="https://user-images.githubusercontent.com/4959922/87235587-7f40d280-c3ab-11ea-9e1d-10d02ce7d1b0.png">
+<img width="280" src="https://user-images.githubusercontent.com/4959922/87235587-7f40d280-c3ab-11ea-9e1d-10d02ce7d1b0.png">
