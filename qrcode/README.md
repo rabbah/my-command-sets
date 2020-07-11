@@ -1,12 +1,10 @@
-# qr Command Set
+# QR Code Generator Command Set
 
 ## Commands
 
-- [`qr`](#qr)
+- [`qr` ...](./packages/qr/qr/qr.js)
 
-## Usage
-
-### install command set
+## Installation
 
 Run the following command your Nimbella enabled messaging system (e.g., Slack).
 
@@ -14,7 +12,7 @@ Run the following command your Nimbella enabled messaging system (e.g., Slack).
 /nc csm_install github:rabbah/my-command-sets/qrcode
 ```
 
-### run the qr code generator command
+## Usage
 
 The `qr` command expects some text to generate a QR code.
 Here is an an example.
