@@ -1,0 +1,6 @@
+commands:
+  qr:
+    description: qr code generator
+    parameters:
+      - name: "..."
+ 
