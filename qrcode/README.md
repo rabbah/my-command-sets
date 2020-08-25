@@ -51,7 +51,7 @@ messaging platform like Slack, using [Nimbella Commander](https://nimbella.com/c
 
 ### Installation
 
-Run the following command your Nimbella enabled messaging system (e.g., Slack).
+Run the following command in your Nimbella Commander enabled messaging system (e.g., Slack).
 
 ```
 /nc csm_install github:rabbah/my-command-sets/qrcode
@@ -69,3 +69,11 @@ Here is an an example.
 This will produce the QR code in response.
 
 <img width="280" src="https://user-images.githubusercontent.com/4959922/87235587-7f40d280-c3ab-11ea-9e1d-10d02ce7d1b0.png">
+
+### Uninstall
+
+To uninstall the slash command using Nimbella Commander.
+
+```
+/nc csm_uninstall github:rabbah/my-command-sets/qrcode
+```
