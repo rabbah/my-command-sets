@@ -26,9 +26,7 @@ You can use the API with Postman or with `curl`.
 curl `nim action get qr/qr --url`.json \
      --header 'Content-Type: application/json' \
      --data-raw '{
-       "params": {
-         "varArgs": "this is the text i want to qr code"
-       }
+       "params": "this is the text i want to qr code"
      }'
 ```
 
