@@ -1,2 +1,5 @@
 *~
-/node_modules/
+node_modules
+__deployer__.zip
+package-lock.json
+.nimbella
