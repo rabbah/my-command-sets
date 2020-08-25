@@ -1,10 +1,57 @@
-# QR Code Generator Command Set
+# QR Code Generator
 
-## Commands
+This example application deploys an API for generating QR Codes.
+The API may be used in any of the following ways:
 
-- [`qr ...`](./packages/qr/qr/qr.js)
+1. As standalone API which accepts a string parameter and return a link to the generate QR code.
+2. Or as Jamstack or single page web application.
+3. Or with [Nimbella Commander](https://nimbella.com/commander) to generate QR Codes with a "slash command" from Slack, Mattermost or Microsoft Teams.
 
-## Installation
+## Deploy API and Jamstack app
+
+- The API is implemented by a single function called [`qr ...`](./packages/qr/qr/qr.js).
+- The web UI for the frontend is available in the [`web`](./web) folder.
+
+To deploy this project as an API and as Jamstack single page app, use the [Nimbella CLI](https://apigcp.nimbella.io/downloads/nim/nim.html).
+
+```
+nim project deploy qrcode
+```
+
+## 1. How to use the API
+
+You can use the API with Postman or with `curl`.
+
+```
+curl `nim action get qr/qr --url`.json \
+     --header 'Content-Type: application/json' \
+     --data-raw '{
+       "params": {
+         "varArgs": "this is the text i want to qr code"
+       }
+     }'
+```
+
+## 2. Jamstack single page app
+
+When this project is deployed, the frontend UI is deployed
+to your Nimbella dedicated domain. You can open the app in your
+browser.
+
+The command `nim auth current --web` will show you the dedicated
+domain for your account. On Mac OS, you can use it to open the app
+in your browser.
+
+```
+open `nim auth current --web`
+```
+
+## 3. Slash Command
+
+This project can also be used as a Slash Command which you can run from a
+messaging platform like Slack, using [Nimbella Commander](https://nimbella.com/commander).
+
+### Installation
 
 Run the following command your Nimbella enabled messaging system (e.g., Slack).
 
@@ -12,7 +59,7 @@ Run the following command your Nimbella enabled messaging system (e.g., Slack).
 /nc csm_install github:rabbah/my-command-sets/qrcode
 ```
 
-## Usage
+### Usage
 
 The `qr` command expects some text to generate a QR code.
 Here is an an example.
