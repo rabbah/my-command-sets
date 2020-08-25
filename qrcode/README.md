@@ -3,19 +3,19 @@
 This example application deploys an API for generating QR Codes.
 The API may be used in any of the following ways:
 
-1. As standalone API which accepts a string parameter and return a link to the generate QR code.
+1. As standalone API which accepts a string parameter and returns a link to the generate QR code.
 2. Or as Jamstack or single page web application.
 3. Or with [Nimbella Commander](https://nimbella.com/commander) to generate QR Codes with a "slash command" from Slack, Mattermost or Microsoft Teams.
 
 ## Deploy API and Jamstack app
 
-- The API is implemented by a single function called [`qr ...`](./packages/qr/qr/qr.js).
+- The API is implemented by a single function called [`qr`](./packages/qr/qr/qr.js).
 - The web UI for the frontend is available in the [`web`](./web) folder.
 
-To deploy this project as an API and as Jamstack single page app, use the [Nimbella CLI](https://apigcp.nimbella.io/downloads/nim/nim.html).
+To deploy this project as an API and as a Jamstack single page app, use the [Nimbella CLI](https://apigcp.nimbella.io/downloads/nim/nim.html).
 
 ```
-nim project deploy qrcode
+nim project deploy .
 ```
 
 ## 1. How to use the API
@@ -62,7 +62,7 @@ Run the following command in your Nimbella Commander enabled messaging system (e
 The `qr` command expects some text to generate a QR code.
 Here is an an example.
 
-```sh
+```
 /nc qr hello world!
 ```
 
