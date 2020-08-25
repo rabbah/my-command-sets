@@ -5,7 +5,7 @@ const bucket = nimbella.storage(true)
 
 async function main({params}) {
     const filename = uuid.v4() + '.png'
-    const text = params.varArgs
+    const text = params.varArgs || params
     const image_url = `https://${process.env.__OW_NAMESPACE}-apigcp.nimbella.io/${filename}`
     
     return qrcode
