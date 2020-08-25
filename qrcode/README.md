@@ -23,7 +23,7 @@ nim project deploy qrcode
 You can use the API with Postman or with `curl`.
 
 ```
-curl `nim action get qr/qr --url`.json \
+curl `nim action get qr/qr --url` \
      --header 'Content-Type: application/json' \
      --data-raw '{
        "params": "this is the text i want to qr code"
