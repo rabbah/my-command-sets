@@ -1,0 +1,5 @@
+commands:
+  comply:
+    description: Robocop comply giphy with customizable caption
+    parameters:
+      - name: "..."
