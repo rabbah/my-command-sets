@@ -50,3 +50,11 @@ Now you can create the command in your messaging environment. In Slack or Micros
 
 Note the second command which binds the slash command `joke` to the URL of your API. This invokes your API everytime your command runs. 
 **Important:** The `command_webhook` command adds the suffic `.json` to the end of the URL for your API. This is important and meaningful. If you omit it, the slash command will not work as expected.
+
+## Run your new command
+
+You are ready to use the slash command now. You can run it, and administer it like any other slash command.
+```
+/nc joke
+ASCII stupid question, get a stupid ANSI.
+```
