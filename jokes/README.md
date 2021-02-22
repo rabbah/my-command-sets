@@ -39,6 +39,7 @@ The API is now live. We will need the URL for the API to use with Commander. Run
 nim action get joke --url
 ```
 
+**Pro tip:** You can run `nim project deploy github:rabbah/my-command-sets/jokes` to install the project directly from GitHub without cloning this project. The CLI may prompt you to login with GitHub to work around GitHub API rate limits. 
 
 ## Creating the slash command
 
