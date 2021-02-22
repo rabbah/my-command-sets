@@ -8,7 +8,7 @@ This `jokes` project is an example to illustrate how to create a slash command u
 
 ## Project organization
 
-There is only one command in this project. It is implemented by the `joke` API in [./packages/default/joke/__main__.py](./packages/default/joke/__main__.py). The code imports `pyjokes`, generates a new joke and formats the response for Commander.
+There is only one command in this project. It is implemented by the `joke` API in [./packages/default/joke/__main__.py](./packages/default/joke/__main__.py). The code imports `pyjokes` (installed via [`requirements.txt`](./packages/default/joke/requirements.txt)), generates a new joke and formats the response for Commander.
 
 ## Installing the project with `nim`
 
